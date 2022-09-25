@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Raj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <section class="intro">
+            <img id="profile-pic" height="300" width="300" src="./resources/profile.jpg" alt="Profile-pic"/>
+            <h1>Hi! i am Akash</h1>
+            <p>I am <span id="dynamic-text"></span></p>
+            <p class="social-links">
+                <a href="https://www.linkedin.com/in/akashraj98/" target="_blank"><img src="./resources/linkedin.png" alt="linkein"/></a>
+                <a href="https://www.instagram.com/_raj.akash/" target="_blank"><img src="./resources/instagram.png" alt="instagram"/></a>
+                <a href="https://www.facebook.com/overclock21/" target="_blank"><img src="./resources/facebook.png" alt="facebook"/></a>
+            </p>
+        </section>
+    </section>
+    <section>
+        <section id="about-me">
+            <h1>About me</h1>
+            <p>I am a software developer. I have graduated from Amity School of Engineering and Technology
+                I live in Delhi and looking for Backend role. I have experience working in a fintech startup where i worked
+                with refunds team and help in maintiaining refunds system help decrease no of refunds tickets by adding features 
+                and solving bugs. I know how end to end process of a transaction weather it is cars, wallet ,upi, Bank Transfer.
+                I have worked in functional programming languages like haskell and purescript apart from that I have good knowledge of python language
+                and currently upskilling my self with devsnet frontent development Bootcamp
+            </p>
+        </section>
+        <section id="education">
+            <h1>Education and Academics</h1>
+            <div>
+                <p>AMITY SCHOOL OF ENGINEERING & TECHNOLOGY, GGSIPU <br>
+                    B.Tech. in InformationTechnology <br>
+                    Aug 2017 -Aug 2021 | Delhi
+                </p>
+                <h3>Coursework</h3>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Object oriented Programming</li>
+                    <li>Introduction to Programming</li>
+                    <li>Operating System</li>
+                    <li>Database Management System</li>
+                </ul>
+        </section>
+        <section id="experience">
+            <h1>Experience</h1>
+            <div>
+                <h4>Juspay Technologies  | <br>
+                Software Development Engineer Intern
+                </h4>
+                Aug 2021 - April 2022 | Bangalore
+                
+                <ul>
+                    <li>Integrated CITRUS & CRED Payment gateway APIs in Euler Backend system.</li>
+                    <li>Designed and implemented Refunds flow for dummy gateway, introducing this
+                        helped merchants to integrate faster with juspay</li>
+                    <li>Added a feature to log refund state at every stage of transaction
+                        this helped in reducing no. of merchant tickets related to refund status</li>
+                    <li>Role involved Debugging manual review refund cases, fixing bugs and resolving
+                        merchant tickets</li>
+                    <li>Worked with refunds team that handles around 1000000 daily refund</li>
+                    <li>Completed Haskell training, to write code in functional programming style</li>
+                </ul>
+            </div>
+                
+            <div>
+                <h4>CloudStuff  |<br>
+                Associate Software Development Engineer Intern
+                </h4>
+                2019 – Aug 2019 | Noida
+                <ul>
+                    <li>Developed monitoring system in Node.js and Python that monitors cluster of
+                        servers running on AWS cloud and sends alerts if a server fails any system check</li>
+                    <li>Wrote algorithms in Appscript that automate monitoring of websites.</li>
+                    <li>Wrote documentation and API endpoint for Trackier-tool that tracks ads
+                        conversion.</li>
+                    <li>Role involved Debugging manual review refund cases, fixing bugs and resolving
+                        merchant tickets</li>
+                    <li>Learned how to automate different tasks and write API for a software</li>
+                    <li>Maximised server up-time by detecting problem before any fault</li>
+                </ul>
+            </div>
+        </section>
+        <section id="project">
+            <h1>Projects</h1>
+            <div>
+                <div>
+                    <h4>Twitter Hate Speech Detector</h4>
+                    <div>
+                        <p>Developed web-app that detects hateful users on twitter. It can be used to detect
+                            percent of hate on a particular topic.
+                        </p>
+                        <ul>
+                            <li>Used Twitter Tweepy API to get tweets and make dataset</li>
+                            <li>Performed vectorization and lemmatization using NLTK library</li>
+                            <li>Developed a logistic regression based model that estimates whether the given
+                                content is hate-speech of not. Visualize results to understand model features
+                                and limitations</li>
+                            <li>Learned predictive modelling algorithms to draw insight from text data</li>
+                        </ul>
+                    </div>
+                    <h4>Retail Chain System Dashboard</h4>
+                    <p>Developed a Dashboard for Retailers to keep a check over their orders and ML
+                        derived suggestions and insights to increase revenue.
+                    </p>
+                    <ul>
+                        <li>Visualize data to show insights and customer segmentation on basis of recent
+                            buy item, frequency and money spent
+                        </li>
+                        <li>Used Time series forecasting to predict future sales pattern</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies">
+            <h1>Hobbies & Interest</h1>
+            <div>
+                <div>
+                    <h4>Hobbies</h4>
+                    <li>Reading</li>
+                    <li>Running</li>
+                    <li>Travelling</li>
+                </div>
+            </div>
+        </section>
+        <div id="technologies">
+            <table>
+                <tr>
+                    <th>Frontend</th>
+                    <th>Backend</th>
+                    <th>Database</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Haskell</td>
+                    <td>Mysql</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Python</td>
+                    <td>Sqlite</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact">
+            <form id="contact" method="POST" data-netlify="ture">
+                <h3> Contact-me</h3>
+                <div>
+                    <label for="Name">Full Name</label>
+                    <input type="text" name="name" id="name" required/> 
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        
+
+    </section>
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
