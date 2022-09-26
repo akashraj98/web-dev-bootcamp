@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-wrapper" class="clearfix">
+        <h1>Notepad </h1>
+        <p>Simple Notepad App.</p>
+    
+        <form action="#" method="POST" id="file-form">
+          <div class="field">
+            <input type="text" name="filename" id="filename" placeholder="Note Heading">
+          </div>
+          <div class="field">
+            <button type="submit">Save File</button>
+            <div id="messages"></div>
+            <button id="bold">Bold</button>
+            <button id="underline">Uderline</button>
+            <button id="copy">Copy</button>
+          </div>
+          <div class="field" id="field-content">
+            <fieldset name="content" id="content" contenteditable="true" placeholder="Type your content here..."></fieldset>
+          </div>
+        </form>
+    
+        <div id="files">
+          <h2>Note List</h2>
+          <ul id="file-list"></ul>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

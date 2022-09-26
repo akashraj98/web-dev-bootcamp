@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <section class="intro">
-            <img id="profile-pic" height="300" width="300" src="./resources/profile.jpg" alt="Profile-pic"/>
+    <header>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact me</a>
+            <!-- <a href="#about-me">About Me</a> -->
+            
+        </nav>
+    </header>
+    <main class="container">
+        <article class="intro">
+            <img id="profile-pic" src="./resources/profile.jpg" alt="Profile-pic"/>
             <h1>Hi! i am Akash</h1>
             <p>I am <span id="dynamic-text"></span></p>
             <p class="social-links">
@@ -18,9 +29,7 @@
                 <a href="https://www.instagram.com/_raj.akash/" target="_blank"><img src="./resources/instagram.png" alt="instagram"/></a>
                 <a href="https://www.facebook.com/overclock21/" target="_blank"><img src="./resources/facebook.png" alt="facebook"/></a>
             </p>
-        </section>
-    </section>
-    <section>
+        </article>
         <section id="about-me">
             <h1>About me</h1>
             <p>I am a software developer. I have graduated from Amity School of Engineering and Technology
@@ -119,16 +128,16 @@
         </section>
         <section id="hobbies">
             <h1>Hobbies & Interest</h1>
-            <div>
-                <div>
-                    <h4>Hobbies</h4>
+            <div> 
+                <h4>Hobbies</h4>
+                <ul>
                     <li>Reading</li>
                     <li>Running</li>
                     <li>Travelling</li>
-                </div>
+                </ul>
             </div>
         </section>
-        <div id="technologies">
+        <section id="technologies">
             <table>
                 <tr>
                     <th>Frontend</th>
@@ -146,8 +155,8 @@
                     <td>Sqlite</td>
                 </tr>
             </table>
-        </div>
-        <div id="contact">
+        </section>
+        <section id="contact">
             <form id="contact" method="POST" data-netlify="ture">
                 <h3> Contact-me</h3>
                 <div>
@@ -160,13 +169,9 @@
                 </div>
                 <button type="submit">Submit</button>
             </form>
-        </div>
-
-        
-
-    </section>
+        </section>
+    </main>
+    <footer> Made with ❤️ by Akash Raj</footer>
     <script src="main.js"></script>
-    
-    
 </body>
 </html>

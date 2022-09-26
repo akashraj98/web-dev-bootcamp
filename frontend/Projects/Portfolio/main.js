@@ -4,7 +4,7 @@ const phrases = ["Software Developer...","Learner...","Human Being..."];
 let phraseIndex = 0;
 let letterindex = 0;
 const typingSpeed = 100;
-const erasingSpeed = 150;
+const erasingSpeed = 300;
 
 function printLetters(phrase){
     if (letterindex == phrase.length){

@@ -1,12 +1,29 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin : 18px;
+    margin : 16px;
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
-.intro{
+html{
+    scroll-behavior: smooth;
+}
+header {
     padding: 16px;
-    margin: -18px;
+    margin: -16px;
+    position: sticky;
+    top: 0;
+    border: 1px solid white;
+    background: white;
+    border-bottom: 2px solid;
+}
+header nav > a{
+    margin: 16px;
+    text-decoration: None;
+    padding: 8px;
+}
+.intro{
+    padding: 25px;
+    margin: -16px;
     background-color: rgb(35, 30, 30);
     color: white;
     text-align: center;
@@ -52,4 +69,11 @@ td{
     display: block;
     font-weight: 500;
     /* border-radius: 5px; */
+}
+footer{
+    padding: 7px;
+    margin: -16px;
+    margin-top: 7px;
+    border-top: 2px solid;
+    text-align: center;
 }
