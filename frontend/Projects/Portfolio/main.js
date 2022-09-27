@@ -12,9 +12,7 @@ function printLetters(phrase){
     }
     else if (letterindex < phrase.length){
         dynamicContent.textContent += phrase.charAt(letterindex)
-        console.log(phrase.charAt(letterindex))
         letterindex+=1
-        // setTimeout(printLetters(phrase),300)   // # why this is incorrect?
         setTimeout
         setTimeout(function (){
             printLetters(phrase) 
@@ -33,7 +31,6 @@ function clearLetter(){
         for (index = 0; index < letterindex; index++){
             updatedPhrase+=phrases[phraseIndex].charAt(index);
         }
-        console.log(updatedPhrase)
         dynamicContent.textContent = updatedPhrase;
         letterindex -=1;
         setTimeout(clearLetter,erasingSpeed); //difference between setInterval and set timeout

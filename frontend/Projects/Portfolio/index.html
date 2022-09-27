@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
         <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <nav class="default-nav">
             <a href="#about-me">About Me</a>
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
@@ -17,6 +29,9 @@
             <a href="#contact">Contact me</a>
             <!-- <a href="#about-me">About Me</a> -->
             
+        </nav>
+        <nav class="mobile-nav">
+            <button id="menu-button">Menu</button>
         </nav>
     </header>
     <main class="container">
@@ -160,7 +175,7 @@
             <form id="contact" method="POST" data-netlify="ture">
                 <h3> Contact-me</h3>
                 <div>
-                    <label for="Name">Full Name</label>
+                    <label for="Name">Email/Name</label>
                     <input type="text" name="name" id="name" required/> 
                 </div>
                 <div>
@@ -173,5 +188,6 @@
     </main>
     <footer> Made with ❤️ by Akash Raj</footer>
     <script src="main.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
