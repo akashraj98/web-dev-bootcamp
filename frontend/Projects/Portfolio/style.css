@@ -1,8 +1,10 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin : 16px;
     font-size: 1.2rem;
     line-height: 1.6rem;
+
 }
 html{
     scroll-behavior: smooth;
@@ -15,6 +17,7 @@ header {
     border: 1px solid white;
     background: white;
     border-bottom: 2px solid;
+    z-index: 1;
 }
 nav > a{
     text-decoration: None;
@@ -44,6 +47,8 @@ header nav > a:last-child{
     border-radius: 50%;
     height: 400px;
     width: 400px;
+    filter: drop-shadow(4px -6px 10px rgb(56, 55, 55));
+
 }
 .social-links img{
     height: 30px;
@@ -127,7 +132,8 @@ section.menu nav{
         z-index: 1;
         background-color: white; 
         width: 100%;
-
+        transition: height 0.8s ease-in-out
+       
     }
     #menu-button{
         display: block;
@@ -146,4 +152,14 @@ button{
     background: transparent;
     border:none;
     font-size: x-large;
+    /* animation: rotation 0.8s alternate; */
 }
+@keyframes rotation{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

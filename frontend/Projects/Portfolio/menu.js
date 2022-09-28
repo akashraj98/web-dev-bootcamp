@@ -5,6 +5,8 @@ function showMenu(){
 }
 
 function hideMenu(){
+    let menuX =document.getElementById("close-menu");
+    menuX.style.animation = "rotation 0.8s alternate";
     const menu = document.querySelector("section.menu");
     menu.style.height = "0";
 }
